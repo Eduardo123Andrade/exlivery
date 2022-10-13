@@ -1,6 +1,6 @@
 defmodule Exlivery.Users.CreateOrUpdate do
   alias Exlivery.Users
-  alias Users.Agents, as: UserAgent
+  alias Users.Agent, as: UserAgent
   alias Users.User
 
   def call(%User{cpf: cpf, address: address, age: age, email: email, name: name}) do

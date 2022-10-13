@@ -2,7 +2,7 @@ defmodule Exlivery.Orders.CreateOrUpdate do
   alias Exlivery.Orders.Agent, as: OrderAgent
   alias Exlivery.Orders.Item
   alias Exlivery.Orders.Order
-  alias Exlivery.Users.Agents, as: UserAgent
+  alias Exlivery.Users.Agent, as: UserAgent
 
   def call(%{user_cpf: user_cpf, items: items}) do
     with {:ok, user} <- UserAgent.get(user_cpf),
