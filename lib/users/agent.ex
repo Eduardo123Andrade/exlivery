@@ -1,6 +1,4 @@
-defmodule Exlivery.Users do
-  use Agent
-
+defmodule Exlivery.Users.Agent do
   alias Exlivery.Users.User
 
   def start_link(_initial_state) do
