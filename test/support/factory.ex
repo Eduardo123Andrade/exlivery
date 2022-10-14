@@ -1,5 +1,6 @@
 defmodule Exlivery.Factory do
   use ExMachina
+
   alias Exlivery.Orders.{Item, Order}
   alias Exlivery.Users.User
 

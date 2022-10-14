@@ -1,9 +1,10 @@
 defmodule Exlivery.Orders.AgentTest do
   use ExUnit.Case
 
+  import Exlivery.Factory
+
   alias Exlivery.Orders.Agent, as: OrderAgent
 
-  import Exlivery.Factory
 
   describe "save/1" do
     test "saves the order" do

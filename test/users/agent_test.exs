@@ -1,10 +1,11 @@
 defmodule Exlivery.Users.AgentTest do
   use ExUnit.Case
 
+  import Exlivery.Factory
+
   alias Exlivery.Users.Agent, as: UserAgent
   alias Exlivery.Users.User
 
-  import Exlivery.Factory
 
 
   describe "save/1" do
