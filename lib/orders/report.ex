@@ -13,7 +13,6 @@ defmodule Exlivery.Orders.Report do
     OrderAgent.list_all()
     |> Map.values()
     |> Enum.map(fn order -> order_string(order) end)
-    |> IO.inspect()
   end
 
 
